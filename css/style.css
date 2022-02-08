@@ -9,8 +9,9 @@ body {
 /* container */
 .container {
   width: 100%;
-  max-width: 1170px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0px 15px;
 }
 
 /* header */
@@ -204,14 +205,17 @@ body {
 /* Team */
 
 .team {
-  margin: 100px 370px;
+  margin: 100px 370px 70px 370px;
 }
 .team_item {
   width: 25%;
+  padding: 0px 15px;
+  margin-bottom: 30px;
 }
 .team_inner {
   display: flex;
   flex-wrap: wrap;
+  margin: 0px -15px;
 }
 .container_team {
 
@@ -229,7 +233,7 @@ body {
   margin-bottom: 12px;
 }
 .team_position {
-  color: black;
+  color: #e84545;
   margin-bottom: 25px;
   font-size: 13px;
   text-transform: uppercase;
@@ -238,7 +242,84 @@ body {
 .team_descriprion {
   font-size: 14px;
   color: #6c7279 ;
+  line-height: 1.5;
+  margin-bottom: 10px;
 }
-.team_sociall_app {
 
+
+/* Social */
+
+.social {
+  display: flex;
+ 
+}
+.social_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin-right: 4px;
+  border: 1px solid #e8ecee;
+  background-color: #fff;
+  transition: background .1s linear;
+}
+.social_icon {
+  fill: #c6cacc;
+  height: 19px;
+}
+.social_item:hover .social_icon{
+  fill: black;
+}
+.social_item:hover {
+  background-color: #c6cacc;
+}
+
+/* Testimonials */
+.testimonials {
+  background-color: #53354a;
+  /* Чтобы не вылезали картинки (если они большие) */
+  overflow: hidden;
+}
+.container {
+}
+.testimonials_item {
+  display: flex;
+  /* Чтобы на мобилках переносили блок */
+  flex-wrap: wrap;
+}
+.testimonial_photo {
+  height: 500px;
+  position: relative;
+  width: 50%;
+  
+}
+.testimonial_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  padding-left: 80px;
+}
+.testimonials_text {
+  font-family: 'Cardo Italic', arial;
+  color: #fff;
+  font-size: 36px;
+  font-style: italic;
+  line-height: 1.2;
+  padding-bottom: 30px;
+  
+  
+}
+.testimonials_photo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+.tystimonials_author {
+  font-size: 13px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
 }
