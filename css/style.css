@@ -54,7 +54,12 @@ body {
   text-decoration: underline;
   opacity: 1;
 }
+
+
+
 /* Intro */
+
+
 .intro {
   display: flex;
   /* каждый новый объект будет с новой строчки */
@@ -117,7 +122,9 @@ body {
   background-color: #dd3434;
 }
 
+
 /* Icons */
+
 
 .icons {
   display: flex;
@@ -146,7 +153,13 @@ body {
   line-height: 21px;
   color: #6c7279;
 }
+
+
+
 /* Works */
+
+
+
 .work {
   display: flex;
   flex-wrap: wrap;
@@ -251,7 +264,10 @@ body {
 
 .social {
   display: flex;
- 
+}
+.social--footer {
+  justify-content: center;
+  background-color: none;
 }
 .social_item {
   display: flex;
@@ -264,17 +280,28 @@ body {
   background-color: #fff;
   transition: background .1s linear;
 }
+
 .social_icon {
   fill: #c6cacc;
   height: 19px;
 }
 .social_item:hover .social_icon{
-  fill: black;
+  fill: #000;
+}
+.social--footer .social_item{
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 2px;
+}
+.social--footer .social_icon{
+  fill: #fff;
 }
 .social_item:hover {
   background-color: #c6cacc;
 }
-
+.social--footer .social_item:hover{
+  background-color: #fff;
+}
 /* Testimonials */
 .testimonials {
   background-color: #53354a;
@@ -322,4 +349,74 @@ body {
   color: #fff;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+/* Download */
+.download {
+  margin: 85px 0px 85px 0px;
+  text-align: center;
+  
+}
+.container {
+}
+.donwload_title {
+  font-size: 28px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  color: #2d3033;
+}
+.donwload_subtitle {
+  color: #2d3033;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.btn--long{
+  min-width: 280px;
+  
+}
+
+/* Footer */
+.footer {
+  background-color: #3a3e64;
+  text-align: center;
+}
+.container {
+}
+.footer_inner {
+  padding: 70px 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer_block {
+  width: 33.3%;
+  padding: 0px 15px;
+}
+.footer_title {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  
+}
+.footer_address {
+  font-size: 14px;
+  font-style: normal;
+  color: #fff;
+  opacity: 50%;
+  line-height:1.5;
+}
+.copyrating_footer {
+  padding: 20px 0px;
+  background-color: #313454;
+}
+.copyrating_text {
+  text-align: center;
+  color: #808080;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.copyrating_text span{
+   color: #fff;
 }
